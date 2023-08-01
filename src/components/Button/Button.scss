@@ -1,0 +1,85 @@
+@use "./../../assets/styles/abstracts/colors" as *;
+@use "./../../assets/styles/abstracts/fonts" as *;
+// .s{
+//   font-size: 14px;
+//     font-family: $font-poppins;
+//     color: $color-light-white;
+//     background-color:red;
+//     min-width: 108px;
+//     min-height: 30px;
+
+// }
+
+.naf-btn {
+  min-width: 200px;
+  min-height: 44px;
+  background-color: $color-white;
+  border-radius: 5px;
+  font-family: $font-poppins;
+  font-weight: $fontweight-medium;
+  text-align: center;
+  padding: 0 20px;
+
+  &__full {
+    color: $color-light-white;
+    background-color: $color-primary;
+    width: 100%;
+  }
+  &__primary {
+    color: $color-light-white;
+    background-color: $color-primary;
+  }
+
+  &__secondary {
+    color: $color-light-white;
+    background-color: $color-secondary;
+  }
+
+  &__small {
+    font-size: 14px;
+    font-family: $font-poppins;
+    color: $color-light-white;
+    background-color: $color-primary;
+    
+  }
+  &__verysmall {
+    font-size: 14px;
+    font-family: $font-poppins;
+    color: $color-light-white;
+    background-color: $color-primary;
+    min-width: 70px;
+    min-height: 44px;
+
+  }
+
+  &__medium {
+    background-color: $color-primary;
+    border-radius: 5px;
+    color: $color-light-white;
+    font-size: 14px;
+    min-width: 300px;
+    min-height: 44px;
+  }
+
+  &__large {
+    font-size: 1.6rem;
+    padding: 1.2rem 2.4rem;
+    background-color: $color-primary;
+    color: $color-light-white;
+    width: 90%;
+  }
+  &:hover {
+    color: $color-light-white;
+    background-color: $color-secondary;
+    border: $color-secondary;
+  }
+}
+.disabled{
+  background-color:$color-inactive;
+  color:$color-gray-secondary;
+  border: none;
+  &:hover {
+    background-color: $color-inactive;
+    color:$color-gray-secondary;
+  }
+}

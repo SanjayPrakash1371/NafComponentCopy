@@ -1,0 +1,44 @@
+@use "./../../assets/styles/abstracts/colors" as *;
+
+input:focus::-webkit-input-placeholder {
+    color: $color-light-blue;
+}
+
+.naf-searchbox {
+    position: relative;
+    width: 429px;
+    height: 40px;
+    background-color: $color-consent;
+    border-radius: 5px;
+    padding: .2em 2.3em !important;
+    cursor: pointer;
+    border: none;
+
+    &:focus {
+        outline: none;
+        border: 1px solid $color-consent;
+    }
+
+    &::placeholder {
+        font-size: 16px;
+        border-color: $color-consent;
+        color: $color-primary;
+    }
+
+    &:not(:placeholder-shown) {
+        background-color: $color-consent;
+        border-color: $color-primary;
+    }
+
+    &_searchClear {
+        position: relative;
+        right: 2%;
+        top: 6%;
+
+    }
+}
+.naf-searchbox-icon {
+    position: relative;
+    left: 26px;
+    z-index: 1;
+}

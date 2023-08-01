@@ -1,0 +1,134 @@
+{
+  "name": "naf-components",
+  "version": "0.2.42",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@babel/core": "^7.20.12",
+    "@fontsource/roboto": "^4.5.8",
+    "@fortawesome/fontawesome-svg-core": "^6.3.0",
+    "@fortawesome/pro-duotone-svg-icons": "^6.3.0",
+    "@fortawesome/pro-light-svg-icons": "^6.3.0",
+    "@fortawesome/pro-regular-svg-icons": "^6.3.0",
+    "@fortawesome/pro-solid-svg-icons": "^6.3.0",
+    "@fortawesome/pro-thin-svg-icons": "^6.3.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@react-ui-org/react-ui": "^0.50.1",
+    "@rollup/plugin-babel": "^6.0.3",
+    "postcss": "^8.4.21",
+    "react": "^18.2.0",
+    "react-calendar": "^4.0.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.39.1",
+    "react-icons": "^4.6.0",
+    "react-number-format": "^5.1.0",
+    "react-password-checklist": "^1.4.2",
+    "react-router-dom": "^6.4.4",
+    "react-scripts": "5.0.1",
+    "react-select": "^5.7.0",
+    "rollup-plugin-scss": "^4.0.0",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "rollup-plugin-uglify": "^6.0.4",
+    "styled-components": "^5.3.6",
+    "typescript": "^4.8.4",
+    "typescript-plugin-css-modules": "^4.1.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public",
+    "build-lib": "rollup -c",
+    "eslint": "npx eslint src/*",
+    "lint": "eslint --fix --ext .ts,.tsx ./src"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "@open-wc/building-rollup": "^2.2.1",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@storybook/addon-actions": "^6.5.13",
+    "@storybook/addon-essentials": "^6.5.13",
+    "@storybook/addon-interactions": "^6.5.13",
+    "@storybook/addon-links": "^6.5.13",
+    "@storybook/builder-webpack5": "^6.5.13",
+    "@storybook/manager-webpack5": "^6.5.13",
+    "@storybook/node-logger": "^6.5.13",
+    "@storybook/preset-create-react-app": "^4.1.2",
+    "@storybook/preset-scss": "^1.0.3",
+    "@storybook/react": "^6.5.13",
+    "@storybook/testing-library": "^0.0.13",
+    "@testing-library/react": "^13.4.0",
+    "@types/jest": "^29.4.0",
+    "@types/react": "^18.0.27",
+    "@types/react-calendar": "^3.9.0",
+    "@types/react-dom": "^18.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "@typescript-eslint/parser": "^5.58.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^6.7.3",
+    "cypress": "^10.11.0",
+    "deepmerge": "^4.3.0",
+    "eslint": "^8.34.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-import-resolver-typescript": "^3.5.3",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prop-types": "^15.8.1",
+    "rimraf": "^4.1.2",
+    "rollup": "^2.79.1",
+    "rollup-plugin-babel": "^3.0.7",
+    "rollup-plugin-dts": "^5.1.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-sass": "^1.12.17",
+    "rollup-plugin-terser": "^7.0.2",
+    "sass": "^1.58.0",
+    "sass-loader": "^13.2.0",
+    "storybook-addon-react-router-v6": "^0.2.1",
+    "style-loader": "^3.3.1",
+    "tslib": "^2.5.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

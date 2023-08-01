@@ -1,0 +1,34 @@
+@use "./../../assets/styles/abstracts/colors" as *;
+@use "./../../assets/styles/abstracts/fonts" as *;
+
+.naf-progresspercent {
+  margin-left: 130px;
+  text-align: left;
+  font-family: $font-poppins;
+  color: $color-secondary-blue;
+
+  &--small {
+    margin-left: 270px;
+  }
+  &--large {
+    margin-left: 370px;
+  }
+}
+
+.naf-progressbar {
+  height: 10px;
+  width: 25px;
+  background-color: aquamarine;
+  border-radius: 5px;
+
+  &--small {
+    width: 5px;
+    height: 5px;
+    border-radius: 15px;
+  }
+  &--large {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+  }
+}

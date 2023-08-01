@@ -1,0 +1,229 @@
+@use "./../../assets/styles/abstracts/colors" as *;
+@use "./../../assets/styles/abstracts/fonts" as *;
+
+.naf-datepicker {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &__input {
+    width: 304px;
+    height: 44px;
+    background-color: $color-white !important;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: $color-dark-grey;
+    font-family: $font-poppins;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid $color-dark-grey !important;
+    outline: none;
+
+    &--active {
+      border: 1px solid $color-secondary !important;
+      background-color: $color-white !important;
+    }
+
+    &--toggle {
+      background-color: $color-white !important;
+    }
+
+    &--completed {
+      background-color: $color-consent !important;
+      border: 1px solid $color-primary;
+    }
+  }
+
+  &__icon--wrapper {
+    position: relative;
+
+    &--completed {
+      color: $color-primary;
+      margin-left: -32px;
+    }
+
+    &--toggle {
+      color: $color-secondary;
+      margin-left: -32px;
+    }
+
+    &--active {
+      color: $color-secondary;
+    }
+  }
+}
+
+.naf-calendar__icon {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.naf-calendar__container {
+  /* ~~~ container styles ~~~ */
+  position: absolute;
+  width: 416px;
+  height: auto;
+  padding: 10px;
+  background-color: $color-white;
+  box-shadow: 0 3px 6px $color-dark-blue-three;
+  border-radius: 5px;
+
+  /* ~~~ navigation styles ~~~ */
+  .react-calendar__navigation {
+    display: flex;
+
+    .react-calendar__navigation__label {
+      text-align: center;
+      font-size: 14px;
+      font-weight: 500;
+      font-family: $font-poppins;
+      color: $color-dark-blue-two;
+      background-color: $color-white;
+    }
+
+    .react-calendar__navigation__arrow {
+      flex-grow: 0.1;
+      background-color: $color-white;
+      border: 1px solid $color-gray-two;
+      border-radius: 4px;
+      color: $color-dark-blue-two;
+      font-size: 24px;
+      text-align: center;
+      font-weight: 500;
+      font-family: $font-poppins;
+      height: 25px;
+      width: 5px;
+      margin-top: 15px;
+      padding: 0px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+
+      &:hover {
+        background-color: $color-light-gray-three;
+      }
+    }
+  }
+
+  /* ~~~ label styles ~~~ */
+  .react-calendar__month-view__weekdays {
+    text-align: center;
+    color: $color-dark-blue-two;
+    font-size: 12px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-family: $font-poppins;
+  }
+
+  /* ~~~ day grid styles ~~~ */
+  .react-calendar__month-view__days {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    .react-calendar__tile {
+      max-width: initial !important;
+    }
+
+    .react-calendar__tile--range {
+      background-color: $color-secondary;
+      color: $color-light-gray-four;
+    }
+  }
+
+  /* ~~~ neighboring month & weekend styles ~~~ */
+  .react-calendar__month-view__days__day--neighboringMonth {
+    background-color: $color-inactive;
+    color: $color-gray-secondary;
+  }
+
+  .react-calendar__month-view__days__day--weekend {
+    opacity: 1;
+  }
+
+  /* ~~~ other view styles ~~~ */
+  .react-calendar__year-view__months,
+  .react-calendar__decade-view__years,
+  .react-calendar__century-view__decades {
+    display: grid !important;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+
+    &.react-calendar__year-view__months {
+      grid-template-columns: 33.3% 33.3% 33.3%;
+    }
+
+    .react-calendar__tile {
+      max-width: initial !important;
+    }
+  }
+
+  abbr[title] {
+    border-bottom: none !important;
+    cursor: inherit !important;
+    text-decoration: none !important;
+    font-size: 12px;
+    font-family: $font-poppins;
+    font-weight: 500;
+  }
+
+  /* ~~~ button styles ~~~ */
+  button {
+    height: 48px;
+    width: auto;
+    margin: 3px;
+    color: $color-dark-blue-two;
+    padding: 5px 0;
+    background-color: $color-consent;
+    border-radius: 4px;
+    font-size: 14px;
+    border: 0;
+
+    &:active {
+      background-color: $color-secondary;
+    }
+
+    &:hover {
+      background-color: $color-light-gray-three;
+    }
+  }
+}
+
+.naf-calendar__container {
+  .naf-calendar__footerbtn {
+    text-align: right;
+    padding: 14px 0px;
+
+    &--btn-cancel {
+      background-color: $color-white;
+      border-radius: 5px;
+      color: $color-primary;
+      padding: 5px 25px;
+      font-weight: 500;
+      font-size: 16px;
+      font-family: $font-poppins;
+
+      &:hover {
+        text-decoration: underline;
+        background-color: $color-white;
+      }
+
+      &:active {
+        background-color: $color-white;
+        color: $color-primary;
+      }
+    }
+
+    &--btn-apply {
+      background: $color-primary;
+      border-radius: 5px;
+      color: $color-light-white;
+      padding: 0px 38px;
+      font-weight: 500;
+      font-size: 16px;
+      font-family: $font-poppins;
+
+      &:hover {
+        background-color: $color-secondary;
+      }
+    }
+  }
+}

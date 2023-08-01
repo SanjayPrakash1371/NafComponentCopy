@@ -1,0 +1,18 @@
+.container {
+  margin: 0px auto auto;
+  display: flex;
+  flex-direction: column;
+  width: 90rem;
+  justify-content: center;
+  text-align: center;
+}
+
+#container{
+  text-align: center;
+}
+
+@media (max-width: 1180px) {
+  .container {
+    width: 100%;
+  }
+}

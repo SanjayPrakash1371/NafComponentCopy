@@ -1,0 +1,29 @@
+@use "./../../assets/styles/abstracts/colors" as *;
+.sample{
+  background-color: aqua !important
+}
+.naf-leftnav {
+  width: 270px;
+  height: 967px;
+  background-color: $color-primary;
+  
+  &__img {
+  margin: 5%;
+  height: 50px;
+  width: 200px;
+}
+}
+
+.naf-leftnav__list {
+  list-style-type: none;
+
+&--menulist {
+  color: $color-white;
+  text-decoration: none;
+}
+
+&--menuicon {
+  color: $color-white;
+  padding-right: 14px;
+}
+}

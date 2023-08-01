@@ -1,0 +1,153 @@
+@use "./../../assets/styles/abstracts/colors" as *;
+@use "./../../assets/styles/abstracts/fonts" as *;
+
+.naf-dropdown {
+    font-size: 12px;
+    font-family: "Poppins";
+    font-weight: $fontweight-medium;  
+    &--primary {
+        color: $color-primary;
+        width: auto;
+        position: relative;
+        align-items: center;
+    }
+    &--secondary {
+        color: $color-dark-grey;
+        width: auto;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+    }
+    &--tertiary {
+      color: $color-primary;
+      width: auto;
+      position: relative;
+      align-items: center;
+      display: inline-flex;
+  }
+  &--withicon {
+    color: $color-primary;
+    width: auto;
+    position: relative;
+    align-items: center;
+    display: inline-flex;
+}
+}
+.naf-select{
+  display:  inline-flex;
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: relative;  
+  transform: rotate(45deg); 
+  text-align: center;
+ top: -5px;
+}
+
+.naf-dropdown__selection--primary::after {
+  @extend .naf-select;
+  border-right: 2px solid $color-primary;
+  border-bottom: 2px solid $color-primary;
+  color: $color-primary;  
+}
+.naf-dropdown__selection--secondary::after {
+  @extend .naf-select;
+  border-right: 2px solid $color-dark-grey;
+  border-bottom: 2px solid $color-dark-grey;
+  color: $color-primary;  
+}
+
+.naf-dropdown__selection {
+  border-radius: 5px;
+  padding: 10x 15px 10px 0px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.naf-dropdown__selection.visible::after {
+  transform: rotate(-135deg);
+  top: 1px;
+  border-right: 2px solid $color-primary;
+  border-bottom: 2px solid $color-primary;
+}
+
+.naf-dropdown .naf-dropdown__item-holder {
+  border-radius: 6px;
+  background-color:aqua;
+  position: absolute;
+  color: $color-primary;
+  border: 2px solid $color-white-smoke;
+  left:50px;
+ // right: 10px;
+  top:25px;
+ // z-index: 5;
+ // right: 10px;
+  //top:25px;
+
+  &--tertiary{
+    top:32px;
+    align-items: center;
+  }
+  &--withicon{
+    top:32px;
+    align-items: center;
+
+  }
+}
+.dropdown--item {
+      padding: 10px 16px;
+      cursor: pointer;
+      padding-right: 40px;
+      
+      &--tertiary{
+        padding: 10px 16px;
+        display: inline-flex;
+        align-items: center;
+        width:100%;
+        
+        &:hover {
+          background-color: $color-light-gray-four;
+        }
+      }
+
+      &:hover {
+        background-color: $color-light-gray-four;
+      }
+}
+// .naf-dropdown {
+//   .naf-dropdown__item-holder {
+//     .naf-dropdown__item-holder--dropdown-item {
+//       padding: 10px 16px;
+//       cursor: pointer;
+//       padding-right: 40px;
+      
+//       &--tertiary{
+//         padding: 0px;
+//       }
+
+//       &:hover {
+//         background-color: $color-light-gray-four;
+//       }
+//     }
+//   }
+// }
+
+.naf-text {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: right;
+    margin-right: 10px;
+    font-weight: $fontweight-medium;
+}
+
+.naf-toggleicon{
+   padding-right:8px;
+  //background-color: aquamarine;   
+}
+
+.naf-toggle--secondary{
+  color: $color-primary;
+}

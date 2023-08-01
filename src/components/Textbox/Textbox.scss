@@ -1,0 +1,77 @@
+@use "./../../assets/styles/abstracts/colors" as *;
+@use "./../../assets/styles/abstracts/fonts" as *;
+
+.naf-textbox {
+ 
+.naf-textbox__input {
+  width: 100%;
+  height: 3.2rem;
+  border: 1px solid $color-primary;
+  border-radius: 5px;
+  font-family: $font-poppins;
+  padding-left: 1rem;
+
+  &::placeholder {
+    color: $color-gray-tertiary;
+  }
+
+  &:not(:placeholder-shown) {
+    background-color: $color-consent;
+    border-color: $color-primary;
+ color: $color-dark-gray-two;  }   
+  
+  &:focus{ 
+    outline: none;
+    border: 1px solid $color-blue;
+    background-color: $color-white;
+  }
+
+  &--error {
+    border-color: $color-danger;
+    border-radius: 5px;
+
+    &:focus {
+      outline: none;
+      border: 1px solid $color-danger;
+    }
+  }
+  &--readonly {
+    background-color: $color-white;
+    border: 1px solid $color-white-smoke;
+    border-radius: 5px;
+    color: $color-dark-gray-two;
+  }
+
+  &--disabled {
+    background-color: $color-inactive;
+    border-radius: 5px;
+    color: $color-gray-secondary;
+    border-color: $color-inactive;
+  }
+
+  &--icon {
+    position: absolute;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    top: 1.5rem;
+    color: $color-secondary;
+
+    &--pointer {
+      cursor: pointer;
+    }
+  }
+  &.borderRed{
+    border: 1px solid $color-danger;
+  }
+}
+
+&__message--error {
+    color: $color-danger;
+    text-align: left;
+    font-size: 11px;
+}
+
+&__alerticon{
+  color: $color-red-secondary;
+}
+}

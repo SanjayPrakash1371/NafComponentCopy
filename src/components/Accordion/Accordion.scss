@@ -1,0 +1,45 @@
+@use "./../../assets/styles/abstracts/colors" as *;
+@use "./../../assets/styles/abstracts/fonts" as *;
+
+.sample{
+  background-color: aqua;
+}
+.naf-accordion:hover{
+  background-color: #ccc; 
+}
+.naf-accordion {
+  font-family: $font-poppins;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  // background-color:aqua;
+  &__header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+
+    &--title {
+      margin: 0;
+      color: $color-primary;
+      font-size: 16px;
+      font-weight: $fontweight-medium;
+
+      &__subtitle {
+        color: $color-gray-secondary;
+      }
+    }
+
+    &--icon {
+      font-size: 20px;
+      color: $color-secondary-blue;
+      font-weight: $fontweight-regular;
+      margin-left: 25px;
+    }
+  }
+
+  &__content {
+    padding: 50px 100px 50px 40px;
+    border: 1px solid #ccc;
+  }
+}

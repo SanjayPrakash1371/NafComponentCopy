@@ -1,0 +1,27 @@
+@use "./../../assets/styles/abstracts/colors" as *;
+.radio{
+  display: flex;
+  flex-direction: column;
+  width: 25px;
+  height: 25px;
+  background-color: aqua;
+}
+.naf-radio {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 5px;
+
+  &__input {
+    width: 25px;
+    height: 25px;
+    accent-color: $color-primary;
+  }
+
+  &__line {
+    width: 60px;
+    height: 0;
+    border: 2px solid $color-gray;
+    display: inline-block;
+    margin-bottom: 9.5px;
+  }
+}

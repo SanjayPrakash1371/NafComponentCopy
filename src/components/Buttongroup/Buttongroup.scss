@@ -1,0 +1,36 @@
+@use "./../../assets/styles/abstracts/colors" as *;
+
+.naf-btn-group {
+    border-radius: 20px;
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+    width: 100%;
+    :disabled {
+      background-color: $color-dark-gray;
+      color: $color-white;
+      opacity: 1;
+
+    }
+    // :hover{
+    //   color: $color-light-blue;
+    // background-color:aliceblue;
+    // border: $color-secondary;
+    // }
+}
+
+.naf-btn-group__custom {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  background-color: $color-primary;
+  color: $color-white;
+  border: 1.5px solid $color-primary;
+  cursor: pointer;
+  border-radius: 25px;
+  width: 25%;
+}
+
+.naf-btn-group__active {
+  background-color: $color-white;
+  border: 1.5px solid $color-primary;
+  color: $color-primary;
+}

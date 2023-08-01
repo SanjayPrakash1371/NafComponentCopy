@@ -1,0 +1,68 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "react-hooks",
+    "import"
+  ],
+    // TODO: Need to enable rules in next release
+    "rules": {
+        "@typescript-eslint/explicit-function-return-type": [
+            "error"
+        ],
+        "linebreak-style": "off",
+        "comma-dangle": "off",
+        "react/jsx-filename-extension": "off",
+        "react/function-component-definition": "off",
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-indent": [
+            "error",
+            4
+        ],
+        "react/jsx-indent-props": [
+            "error",
+            4
+        ],
+        "import/extensions": [
+            "error",
+            {
+                "tsx": "ignorePackages",
+                "ts": "ignorePackages"
+            }
+        ],
+        "import/no-unresolved": "error",
+        "indent": [
+            "error",
+            4
+        ]
+    },
+    "settings": {
+        "import/parsers": {
+            "@typescript-eslint/parser": [
+                ".ts",
+                ".tsx"
+            ]
+        },
+        "import/resolver": {
+            "typescript": {
+                "alwaysTryTypes": true
+            }
+        }
+    }
+}
